@@ -16,4 +16,4 @@ syn = { version = "2.0.63", features = ["full"] }
 proc-macro = true
 
 [dev-dependencies]
-get-kinds = "^1.0.0"
+get-kinds = {path = "../get-kinds"}

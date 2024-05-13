@@ -2,9 +2,9 @@
 pub trait GetKind {
     /// ### Examples
     /// ```
-    /// use get_kinds::Kind;
+    /// use get_kinds::GetKind;
     ///
-    /// #[derive(Kind)]
+    /// #[derive(GetKind)]
     /// enum Test {
     ///     T1,
     ///     T2
@@ -14,4 +14,4 @@ pub trait GetKind {
     fn kind<'a>(&self) -> &'a str;
 }
 
-pub use generate_kinds::Kind;
+pub use generate_kinds::GetKind;
