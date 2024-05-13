@@ -1,3 +1,3 @@
 [workspace]
-members = ["generate-kinds-derive", "get-kinds"]
+members = ["generate-kinds", "get-kinds"]
 resolver = "2"

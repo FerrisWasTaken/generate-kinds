@@ -1,5 +1,5 @@
 [package]
-name = "generate-kinds-derive"
+name = "generate-kinds"
 version = "0.1.0"
 edition = "2021"
 description = "A macro to generate a kinds function for a given enum"
