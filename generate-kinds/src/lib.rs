@@ -1,7 +1,6 @@
 use proc_macro::TokenStream;
 use quote::quote;
 use syn::Item;
-use get_kinds::Kind;
 
 /// Does not take any arguments
 /// Valid forms are `#[kinds]`
@@ -9,7 +8,7 @@ use get_kinds::Kind;
 /// ### Examples
 /// ```
 /// use generate_kinds::kinds;
-/// 
+///
 /// #[kinds]
 /// enum Test {
 ///     T1,
@@ -33,7 +32,8 @@ pub fn kinds(stream: TokenStream) -> TokenStream {
                     }
                 }
             }
-        }.into()
+        }
+        .into()
     } else {
         panic!("Macro only accepts enums")
     }

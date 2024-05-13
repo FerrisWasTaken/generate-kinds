@@ -5,7 +5,7 @@ use get_kinds::Kind;
 #[derive(Debug, Kind)]
 enum TestEnum {
     T1,
-    T2
+    T2,
 }
 
 #[test]

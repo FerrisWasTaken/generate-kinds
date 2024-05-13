@@ -4,7 +4,7 @@ pub trait Kind {
     /// ```
     /// use generate_kinds::kinds;
     /// use get_kinds::Kind;
-    /// 
+    ///
     /// #[kinds]
     /// enum Test {
     ///     T1,
