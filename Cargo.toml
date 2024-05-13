@@ -1,0 +1,3 @@
+[workspace]
+members = ["generate-kinds-derive", "get-kinds"]
+resolver = "2"

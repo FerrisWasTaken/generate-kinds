@@ -1,0 +1,11 @@
+[package]
+name = "get-kinds"
+version = "0.1.0"
+edition = "2021"
+description = "A macro to generate a kinds function for a given enum"
+license = "BSD-3-Clause"
+repository = "https://github.com/FerrisWasTaken/generate-kinds"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
