@@ -3,6 +3,7 @@ pub trait Kind {
     /// ### Examples
     /// ```
     /// use generate_kinds::kinds;
+    /// use get_kinds::Kind;
     /// 
     /// #[kinds]
     /// enum Test {

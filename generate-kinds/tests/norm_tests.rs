@@ -1,8 +1,8 @@
 #![allow(unused)]
-use generate_kinds::kinds;
+use generate_kinds::Kind;
 use get_kinds::Kind;
 
-#[kinds]
+#[derive(Debug, Kind)]
 enum TestEnum {
     T1,
     T2
