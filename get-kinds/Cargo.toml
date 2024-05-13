@@ -1,6 +1,6 @@
 [package]
 name = "get-kinds"
-version = "1.0.2"
+version = "1.0.3"
 edition = "2021"
 description = "A macro to generate a kinds function for a given enum"
 license = "BSD-3-Clause"
