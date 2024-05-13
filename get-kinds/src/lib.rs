@@ -2,10 +2,9 @@
 pub trait Kind {
     /// ### Examples
     /// ```
-    /// use generate_kinds::kinds;
     /// use get_kinds::Kind;
     ///
-    /// #[kinds]
+    /// #[derive(Kind)]
     /// enum Test {
     ///     T1,
     ///     T2
