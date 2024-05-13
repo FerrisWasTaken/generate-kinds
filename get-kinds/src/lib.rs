@@ -1,5 +1,5 @@
 /// Implements just one function [`Kind::kind`]
-pub trait Kind {
+pub trait GetKind {
     /// ### Examples
     /// ```
     /// use get_kinds::Kind;
