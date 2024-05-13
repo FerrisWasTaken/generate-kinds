@@ -9,4 +9,4 @@ repository = "https://github.com/FerrisWasTaken/generate-kinds"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-generate-kinds = "1.0.0"
+generate-kinds = "^0.1.1"
