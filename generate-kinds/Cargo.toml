@@ -11,7 +11,7 @@ repository = "https://github.com/FerrisWasTaken/generate-kinds"
 [dependencies]
 quote = "1.0.36"
 syn = { version = "2.0.63", features = ["full"] }
-get-kinds = "^0.1.0"
+get-kinds = "^1.0.0"
 
 [lib]
 proc-macro = true
