@@ -18,7 +18,7 @@ pub fn kinds(stream: TokenStream) -> TokenStream {
             }.into()
         },
         Data::Enum(e) => {
-            let variants = e.variants.iter();
+            let variants = e.variants.iter().cloned().map(|v| v.ident);
             quote! {
                 impl ::get_kinds::Kind for #ident {
                     fn kind<'a>(&self) -> &'a str {
