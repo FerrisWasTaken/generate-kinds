@@ -31,6 +31,6 @@ pub fn kinds(stream: TokenStream) -> TokenStream {
                 }
             }.into()
         },
-        Data::Union(u) => todo!(),
+        Data::Union(_) => todo!(),
     }
 }
