@@ -7,12 +7,11 @@ use syn::{Data, DeriveInput};
 pub fn kinds(stream: TokenStream) -> TokenStream {
     let ast: DeriveInput = syn::parse(stream).expect("code is invalid");
     let ident = ast.ident;
-    let vis = ast.vis;
     match ast.data {
         Data::Struct(_) => {
             quote! {
                 impl ::get_kinds::Kind for #ident {
-                    #vis fn kind<'a>(&self) -> &'a str {
+                    fn kind<'a>(&self) -> &'a str {
                         stringify!(#ident)
                     }
                 }
@@ -22,7 +21,7 @@ pub fn kinds(stream: TokenStream) -> TokenStream {
             let variants = e.variants.iter();
             quote! {
                 impl ::get_kinds::Kind for #ident {
-                    #vis fn kind<'a>(&self) -> &'a str {
+                    fn kind<'a>(&self) -> &'a str {
                         match self {
                             #(#ident::#variants => stringify!(#ident::#variants),)
                             *
